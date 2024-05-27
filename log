@@ -248,3 +248,38 @@ Mon 27 May 2024 06:33:55 AM UTC:
  tests:  7|1
 total_score: 60/70
 a64c323
+Mon 27 May 2024 06:51:00 AM UTC: 
+ exercises.c | 16 +++++++++++++---
+ 1 file changed, 13 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:144:25: error: expected ‘)’ before ‘;’ token
+  144 |          push(pila, dato;
+      |              ~          ^
+      |                         )
+exercises.c:144:21: error: passing argument 2 of ‘push’ makes pointer from integer without a cast [-Werror=int-conversion]
+  144 |          push(pila, dato;
+      |                     ^~~~
+      |                     |
+      |                     char
+In file included from exercises.c:7,
+                 from test.c:5:
+stack.h:11:31: note: expected ‘void *’ but argument is of type ‘char’
+   11 | void push(Stack *stack, void *data) { pushFront(stack, data); }
+      |                         ~~~~~~^~~~
+In file included from test.c:5:
+exercises.c:144:26: error: expected ‘;’ before ‘}’ token
+  144 |          push(pila, dato;
+      |                          ^
+      |                          ;
+  145 |       }
+      |       ~                   
+exercises.c:154:25: error: suggest parentheses around ‘&&’ within ‘||’ [-Werror=parentheses]
+  154 |          if(dato == '(' && datoAnt == ')' || dato == '{' && datoAnt == '}' || dato == '[' && datoAnt == ']')
+      |             ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+exercises.c:154:91: error: suggest parentheses around ‘&&’ within ‘||’ [-Werror=parentheses]
+  154 |          if(dato == '(' && datoAnt == ')' || dato == '{' && datoAnt == '}' || dato == '[' && datoAnt == ']')
+      |                                                                               ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+f7dbad4
