@@ -49,3 +49,107 @@ Mon 27 May 2024 04:16:37 AM UTC:
  tests:  1|4
 total_score: 10/70
 e0a6a14
+Mon 27 May 2024 04:40:44 AM UTC: 
+ exercises.c | 10 ++++++++--
+ 1 file changed, 8 insertions(+), 2 deletions(-)
+In file included from test.c:6:
+arraylist.c:6:8: error: redefinition of ‘struct List’
+    6 | struct List {
+      |        ^~~~
+In file included from exercises.c:7,
+                 from test.c:5:
+arraylist.c:6:8: note: originally defined here
+    6 | struct List {
+      |        ^~~~
+In file included from test.c:6:
+arraylist.c:14:7: error: redefinition of ‘create_list’
+   14 | List* create_list() {
+      |       ^~~~~~~~~~~
+In file included from exercises.c:7,
+                 from test.c:5:
+arraylist.c:14:7: note: previous definition of ‘create_list’ with type ‘List *()’ {aka ‘struct List *()’}
+   14 | List* create_list() {
+      |       ^~~~~~~~~~~
+In file included from test.c:6:
+arraylist.c:21:7: error: redefinition of ‘first’
+   21 | void* first(List *L) {
+      |       ^~~~~
+In file included from exercises.c:7,
+                 from test.c:5:
+arraylist.c:21:7: note: previous definition of ‘first’ with type ‘void *(List *)’ {aka ‘void *(struct List *)’}
+   21 | void* first(List *L) {
+      |       ^~~~~
+In file included from test.c:6:
+arraylist.c:29:7: error: redefinition of ‘next’
+   29 | void* next(List *L) {
+      |       ^~~~
+In file included from exercises.c:7,
+                 from test.c:5:
+arraylist.c:29:7: note: previous definition of ‘next’ with type ‘void *(List *)’ {aka ‘void *(struct List *)’}
+   29 | void* next(List *L) {
+      |       ^~~~
+In file included from test.c:6:
+arraylist.c:37:6: error: redefinition of ‘pushFront’
+   37 | void pushFront(List *L, void *dato) {
+      |      ^~~~~~~~~
+In file included from exercises.c:7,
+                 from test.c:5:
+arraylist.c:37:6: note: previous definition of ‘pushFront’ with type ‘void(List *, void *)’ {aka ‘void(struct List *, void *)’}
+   37 | void pushFront(List *L, void *dato) {
+      |      ^~~~~~~~~
+In file included from test.c:6:
+arraylist.c:50:6: error: redefinition of ‘pushBack’
+   50 | void pushBack(List *L, void *dato) {
+      |      ^~~~~~~~
+In file included from exercises.c:7,
+                 from test.c:5:
+arraylist.c:50:6: note: previous definition of ‘pushBack’ with type ‘void(List *, void *)’ {aka ‘void(struct List *, void *)’}
+   50 | void pushBack(List *L, void *dato) {
+      |      ^~~~~~~~
+In file included from test.c:6:
+arraylist.c:55:6: error: redefinition of ‘pushCurrent’
+   55 | void pushCurrent(List *L, void *dato) {
+      |      ^~~~~~~~~~~
+In file included from exercises.c:7,
+                 from test.c:5:
+arraylist.c:55:6: note: previous definition of ‘pushCurrent’ with type ‘void(List *, void *)’ {aka ‘void(struct List *, void *)’}
+   55 | void pushCurrent(List *L, void *dato) {
+      |      ^~~~~~~~~~~
+In file included from test.c:6:
+arraylist.c:68:7: error: redefinition of ‘popFront’
+   68 | void* popFront(List *L) {
+      |       ^~~~~~~~
+In file included from exercises.c:7,
+                 from test.c:5:
+arraylist.c:68:7: note: previous definition of ‘popFront’ with type ‘void *(List *)’ {aka ‘void *(struct List *)’}
+   68 | void* popFront(List *L) {
+      |       ^~~~~~~~
+In file included from test.c:6:
+arraylist.c:80:7: error: redefinition of ‘popBack’
+   80 | void* popBack(List *L) {
+      |       ^~~~~~~
+In file included from exercises.c:7,
+                 from test.c:5:
+arraylist.c:80:7: note: previous definition of ‘popBack’ with type ‘void *(List *)’ {aka ‘void *(struct List *)’}
+   80 | void* popBack(List *L) {
+      |       ^~~~~~~
+In file included from test.c:6:
+arraylist.c:89:7: error: redefinition of ‘popCurrent’
+   89 | void* popCurrent(List *L) {
+      |       ^~~~~~~~~~
+In file included from exercises.c:7,
+                 from test.c:5:
+arraylist.c:89:7: note: previous definition of ‘popCurrent’ with type ‘void *(List *)’ {aka ‘void *(struct List *)’}
+   89 | void* popCurrent(List *L) {
+      |       ^~~~~~~~~~
+In file included from test.c:6:
+arraylist.c:102:5: error: redefinition of ‘get_size’
+  102 | int get_size(List *L) {
+      |     ^~~~~~~~
+In file included from exercises.c:7,
+                 from test.c:5:
+arraylist.c:102:5: note: previous definition of ‘get_size’ with type ‘int(List *)’ {aka ‘int(struct List *)’}
+  102 | int get_size(List *L) {
+      |     ^~~~~~~~
+Compilation failed
+5bf04ec

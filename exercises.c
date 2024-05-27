@@ -4,6 +4,7 @@
 #include <math.h>
 #include <ctype.h>
 #include "arraylist.h"
+#include "arraylist.c"
 #include "stack.h"
 
 //#include "exercises.h"
@@ -60,8 +61,13 @@ retorne la suma de sus elementos.
 */
 int sumaLista(List *L) 
 {
-   
-   return 0;
+   int suma = 0;
+   for(int i = 0; i < L->size; i++)
+   {
+      int* dato = (int*) L->data[i];
+      suma += *dato;
+   }
+   return suma;
 }
 
 /*
