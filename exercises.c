@@ -141,7 +141,7 @@ int parentesisBalanceados(char *cadena)
       char dato = cadena[i];
       if(dato == '(' || dato == '{' || dato == '[')
       {
-         push(pila, dato);
+         push(pila, &dato);
       }
       else if (dato == ')' || dato == '}' || dato == ']')
       {
