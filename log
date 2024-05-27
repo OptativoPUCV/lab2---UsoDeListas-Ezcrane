@@ -13,3 +13,21 @@ exercises.c:47:22: error: comparison between pointer and integer [-Werror]
 cc1: all warnings being treated as errors
 Compilation failed
 e065c99
+Mon 27 May 2024 03:43:47 AM UTC: 
+ exercises.c | 6 ++----
+ 1 file changed, 2 insertions(+), 4 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crea_lista’:
+exercises.c:49:20: error: passing argument 2 of ‘pushFront’ makes pointer from integer without a cast [-Werror=int-conversion]
+   49 |       pushFront(L, i);
+      |                    ^
+      |                    |
+      |                    int
+In file included from exercises.c:6,
+                 from test.c:5:
+arraylist.h:17:31: note: expected ‘void *’ but argument is of type ‘int’
+   17 | void pushFront(List *L, void *dato);
+      |                         ~~~~~~^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+f680fd5
