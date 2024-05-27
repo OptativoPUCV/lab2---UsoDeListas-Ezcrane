@@ -322,3 +322,9 @@ exercises.c:154:91: error: suggest parentheses around ‘&&’ within ‘||’ [
 cc1: all warnings being treated as errors
 Compilation failed
 87ba283
+Mon 27 May 2024 06:54:08 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  4|1
+total_score: 50/70
+7d2bbf9
