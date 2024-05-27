@@ -180,3 +180,16 @@ exercises.c:11:8: note: originally defined here
       |        ^~~~
 Compilation failed
 1b15079
+Mon 27 May 2024 04:45:35 AM UTC: 
+ exercises.c | 5 -----
+ 1 file changed, 5 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:65:24: error: invalid use of incomplete typedef ‘List’
+   65 |    for(int i = 0; i < L->size; i++)
+      |                        ^~
+exercises.c:67:27: error: invalid use of incomplete typedef ‘List’
+   67 |       int* dato = (int*) L->data[i];
+      |                           ^~
+Compilation failed
+a114229
