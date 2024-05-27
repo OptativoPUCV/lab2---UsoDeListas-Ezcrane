@@ -122,6 +122,7 @@ void copia_pila(Stack* P1, Stack* P2)
       push(P2, dato);
       pop(aux);
    }
+   free(aux);
 }
 
 /*
