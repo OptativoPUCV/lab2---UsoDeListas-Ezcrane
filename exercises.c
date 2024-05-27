@@ -141,7 +141,7 @@ int parentesisBalanceados(char *cadena)
       char dato = cadena[i];
       if(dato == '(' || dato == '{' || dato == '[')
       {
-         push(pila, &dato);
+         push(pila, (void *)&dato);
       }
       else if (dato == ')' || dato == '}' || dato == ']')
       {
@@ -153,7 +153,7 @@ int parentesisBalanceados(char *cadena)
          else
          {
             char datoAnt = *(char*)top(pila);
-            if((dato == '(' && datoAnt == ')') || (dato == '{' && datoAnt == '}') || (dato == '[' && datoAnt == ']'))
+            if((dato == ')' && datoAnt == '(') || (dato == '}' && datoAnt == '{') || (dato == ']' && datoAnt == '['))
             {
                pop(pila);
             }
