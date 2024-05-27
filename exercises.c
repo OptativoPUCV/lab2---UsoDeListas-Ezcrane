@@ -113,14 +113,14 @@ void copia_pila(Stack* P1, Stack* P2)
    while(get_size(P1) > 0)
    {
       int* dato = top(P1);
-      pop(P1);
       push(aux, dato);
+      pop(P1);
    }
    while(get_size(aux) > 0)
    {
       int* dato = top(aux);
-      pop(aux);
       push(P2, dato);
+      pop(aux);
    }
 }
 
