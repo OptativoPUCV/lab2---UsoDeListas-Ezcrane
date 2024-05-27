@@ -346,3 +346,13 @@ Mon 27 May 2024 07:06:05 AM UTC:
  tests:  4|1
 total_score: 50/70
 b48a7b0
+Mon 27 May 2024 07:07:22 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:144:26: error: expected expression before ‘)’ token
+  144 |          push(pila, dato*);
+      |                          ^
+Compilation failed
+e3eff75
