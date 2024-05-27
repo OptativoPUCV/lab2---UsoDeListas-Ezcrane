@@ -8,6 +8,12 @@
 
 //#include "exercises.h"
 
+struct List {
+  void* data[100];
+  int current;
+  int size;
+};
+
 //Funciones auxiliares que puedes utilizar para debuggear tus ejercicios
 //NO MODIFICAR
 void imprime_lista(List *L) {

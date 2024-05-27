@@ -167,3 +167,16 @@ arraylist.h:6:8: note: originally defined here
       |        ^~~~
 Compilation failed
 0f3aa07
+Mon 27 May 2024 04:44:05 AM UTC: 
+ exercises.c | 6 ++++++
+ 1 file changed, 6 insertions(+)
+In file included from test.c:6:
+arraylist.c:6:8: error: redefinition of ‘struct List’
+    6 | struct List {
+      |        ^~~~
+In file included from test.c:5:
+exercises.c:11:8: note: originally defined here
+   11 | struct List {
+      |        ^~~~
+Compilation failed
+1b15079
