@@ -153,3 +153,17 @@ arraylist.c:102:5: note: previous definition of ‘get_size’ with type ‘int(
       |     ^~~~~~~~
 Compilation failed
 5bf04ec
+Mon 27 May 2024 04:42:00 AM UTC: 
+ exercises.c | 1 -
+ 1 file changed, 1 deletion(-)
+In file included from test.c:6:
+arraylist.c:6:8: error: redefinition of ‘struct List’
+    6 | struct List {
+      |        ^~~~
+In file included from exercises.c:6,
+                 from test.c:5:
+arraylist.h:6:8: note: originally defined here
+    6 | struct List {
+      |        ^~~~
+Compilation failed
+0f3aa07

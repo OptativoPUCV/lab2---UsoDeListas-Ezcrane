@@ -4,7 +4,6 @@
 #include <math.h>
 #include <ctype.h>
 #include "arraylist.h"
-#include "arraylist.c"
 #include "stack.h"
 
 //#include "exercises.h"
